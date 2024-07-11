@@ -1,0 +1,59 @@
+{
+	"height": 28,
+	"modules-left": ["custom/menu", "hyprland/workspaces", "hyprland/window"],
+	"modules-right": ["disk", "cpu", "memory", "wireplumber", "hyprland/language", "clock", "tray"],
+	"clock": {
+		"timezone": "Europe/Astrakhan",
+		"format": " {:L%a %d.%m.%y %H:%M}",
+		"locale": "ru_RU.UTF-8"
+	},
+	"custom/menu": {
+		"format": "",
+		"on-click": "wofi --show drun --allow-images"
+	},
+	"tray": {
+		"icon-size": 16,
+		"spacing": 5
+	},
+	"wireplumber": {
+		"format": "{icon} {volume}%",
+		"format-muted": "  muted",
+		"max-volume": 100,
+		"on-click": "wpctl set-mute 54 toggle",
+		"format-icons": [" ", " ", " "]
+	},
+	"hyprland/language": {
+		"format": " {}",
+		"format-en": "us",
+		"format-ru": "ru"
+	},
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5"
+		},
+		"persistent-workspaces": {
+			"*": 5
+		}
+	},
+	"hyprland/window": {
+		"format": "| {title}"
+	},
+	"memory": {
+		"format": "  {used}GiB/{total}GiB"
+	},
+	"disk": {
+		"interval": 60,
+		"format": "󰉉 {used} ({percentage_used}%)",
+		"path": "/"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": " {}% ({avg_frequency}GHz)",
+		"max-length": 20
+	}
+}
