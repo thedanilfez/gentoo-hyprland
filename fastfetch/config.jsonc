@@ -3,21 +3,53 @@
   "modules": [
     "title",
     "separator",
-    "os",
-    "board",
-    "kernel",
+    {
+    	"type": "command",
+	"text": "cat /etc/gentoo-release",
+	"key": "OS"
+    },
+    {
+    	"type": "kernel",
+	"format": "{1} {2}"
+    },
     "uptime",
     "packages",
-    "shell",
-    "display",
+    {
+    	"type": "shell",
+	"format": "{2} {4}"
+    },
     "wm",
     "theme",
     "icons",
-    "disk",
-    "terminal",
-    "cpu",
-    "gpu",
-    "memory",
+    {
+    	"type": "terminal",
+	"format": "{2}"
+    },
+    "terminalfont",
+    {
+    	"type": "cpu",
+	"format": "{1} ({4}) @ {6}GHz"
+    },
+    {
+    	"type": "gpu",
+	"format": "{2}"
+    },
+    {
+    	"type": "memory",
+	"format": "{1} / {2} ({3})"
+    },
+    "swap",
+    {
+    	"type": "disk",
+	"format": "{1} / {2} ({3}) - {9}"
+    },
+    {
+    	"type": "command",
+	"text": "glxinfo | grep 'OpenGL core profile version' | awk '{print $9,$10}'",
+	"key": "GPU Driver"
+    },
+    "locale",
     "colors"
+
   ]
 }
