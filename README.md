@@ -6,4 +6,4 @@
 - `wofi` Application launcher
 - `swww` Wallpaper daemon
 - `powerlevel10k` zsh theme
-- `JetBrains Mono Nerd + Font Awesome` font
+- `Hack NF + Font Awesome` font
