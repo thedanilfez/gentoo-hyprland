@@ -1,17 +1,18 @@
 media-video/pipewire sound-server
 sys-auth/seatd server builtin
 media-libs/mesa opengl osmesa vaapi proprietary-codecs
+sys-kernel/linux-firmware -initramfs
 gui-apps/waybar tray -logind
 dev-libs/libdbusmenu gtk3
 media-libs/libsdl2 gles2 vulkan opengl -haptic -joystick 
 games-action/ddnet client -server -tools -inform-update vulkan
 media-video/mpv -uchardet
-app-emulation/qemu -jpeg -png -slirp -vnc
+app-emulation/qemu -jpeg -png -vnc
 sys-apps/xdg-desktop-portal flatpak
 media-video/ffmpeg vaapi opus x264 vpx
 media-video/mpv vaapi
 www-client/firefox-bin pulseaudio
-app-editors/vim -acl -X
+app-editors/vim -minimal -acl -X
 gui-libs/gtk-layer-shell introspection vala
 xfce-base/thunar udisks -trash-panel-plugin
 gnome-base/gvfs udisks
@@ -33,3 +34,4 @@ dev-qt/qtgui vulkan egl
 dev-qt/qtdeclarative opengl vulkan accessibility
 dev-qt/qtwayland vulkan accessibility
 app-text/xmlto text
+media-gfx/imagemagick -bzip2 png jpeg

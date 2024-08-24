@@ -1,41 +1,41 @@
 * {
-	font-family: Hack Nerd Font;
+	font-family: "Hack Nerd Font";
 	font-size: 12px;
 	min-height: 0;
 }
 window#waybar {
-	background-color: rgba(19, 19, 19, 0.8);
+	background: transparent;
 }
-#custom-menu,
-#wireplumber,
-#language,
-#memory,
-#disk,
-#cpu,
-#clock {
-	background-color: #303030;
-	color: #ffffff;
-	padding-left: 4px;
-	padding-right: 4px;
-	margin: 3px 2px;
-	border-radius: 4px;
-}
-#custom-menu {
-	padding-right: 10px;
-	padding-left: 6px;
-}
-#tray {
-	padding-left: 4px;
-	padding-right: 4px;
+#workspaces {
+	padding: 3px;
+	border: 3px solid #9d44ff;
+	border-radius: 8px;
+	background: #212121;
 }
 #workspaces button {
-	color: #ffffff;
+	padding: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 #workspaces button.active {
-	border-radius: 0px;
-	border-bottom: 2px solid #ffffff;
+	background: #9d44ff;
 }
 #window {
-	color: #ffffff;
-	font-size: 14px;
+	background: #212121;
+	border: 3px solid #9d44ff;
+	border-radius: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin: 0px 3px;
+}
+#clock,
+#language,
+#wireplumber,
+#tray {
+	background: #212121;
+	border: 3px solid #9d44ff;
+	border-radius: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin: 0px 2px;
 }

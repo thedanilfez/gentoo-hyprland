@@ -43,12 +43,7 @@
     	"type": "disk",
 	"format": "{1} / {2} ({3}) - {9}"
     },
-    {
-    	"type": "command",
-	"text": "glxinfo | grep 'OpenGL core profile version' | awk '{print $9,$10}'",
-	"key": "GPU Driver"
-    },
-    "locale",
+    "break",
     "colors"
 
   ]
